@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>Sick Tunes</title>
+  <style>
+    body{
+    background-color: #fdc6cf;
+  }
+    .navbar a{
+      color:white;
+      text-decoration: none;
+    }
+</style>
+<head>
+<body>
+  <center>
+  <div class="navbar">
+    <a href="music.html" target=_"blank">Music</a>
+    <a href="hobbies.html" target=_"blank">Hobbies</a>
+    <a href="animals.html" target=_"blank">Animals</a>
+    <a href="food.html" target=_"blank">Food</a>
+  </center>
+      <center>
+        <h1>Tunes</h1>
+    <center>
+    <footer>Designed by <a href=https://www.thenamemeaning.com/anela/ target=_"blank"><bold>Anela Hall</Bold></a href> the Billings Career Center 2019</footer>
+  </center>
+  <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    </body>
+    </html>
